@@ -1,0 +1,4 @@
+<%= select_tag "item_id", options_from_collection_for_select(@item, "id", "name"), :prompt => "Select a project", :onchange => "update_color_div(this.value)" %>
+<div id="versionsDiv">
+  <%= render :partial => 'edit_color', :object => @color %>
+</div>
